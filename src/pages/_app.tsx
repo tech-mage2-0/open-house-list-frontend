@@ -1,7 +1,13 @@
 import { AppProps } from 'next/app';
 import Head from 'next/head';
+import { Provider } from 'providers/Provider';
+import { Hydrate } from 'react-query';
 
 import GlobalStyles from 'styles/global';
+
+if (process.env.NEXT_PUBLIC_API_MOCKING) {
+  require('../mocks');
+}
 
 function App({ Component, pageProps }: AppProps) {
   return (
@@ -18,7 +24,11 @@ function App({ Component, pageProps }: AppProps) {
         />
       </Head>
       <GlobalStyles />
-      <Component {...pageProps} />
+      <Provider>
+        <Hydrate state={pageProps.dehydratedState}>
+          <Component {...pageProps} />
+        </Hydrate>
+      </Provider>
     </>
   );
 }
