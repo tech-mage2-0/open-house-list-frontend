@@ -2,8 +2,10 @@
 
 if (typeof window !== 'undefined') {
   const { worker } = require('./browser');
-  worker.start();
+  worker?.start();
 } else {
   const { server } = require('./server');
-  server.listen();
+  server?.listen();
 }
+
+export {};
