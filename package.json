@@ -36,7 +36,7 @@
   },
   "devDependencies": {
     "@storybook/addon-essentials": "6.4.14",
-    "@storybook/builder-webpack5": "^6.4.9",
+    "@storybook/builder-webpack5": "^6.4.15",
     "@storybook/manager-webpack5": "^6.4.9",
     "@storybook/react": "6.4.14",
     "@testing-library/jest-dom": "^5.14.1",
@@ -63,7 +63,7 @@
     "plop": "^3.0.5",
     "prettier": "^2.4.1",
     "storybook-addon-next-router": "^3.0.8",
-    "typescript": "^4.4.3",
+    "typescript": "^4.5.5",
     "webpack": "5"
   },
   "msw": {
