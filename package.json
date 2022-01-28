@@ -36,7 +36,7 @@
   },
   "devDependencies": {
     "@storybook/addon-essentials": "6.4.14",
-    "@storybook/builder-webpack5": "^6.4.9",
+    "@storybook/builder-webpack5": "^6.4.15",
     "@storybook/manager-webpack5": "^6.4.9",
     "@storybook/react": "6.4.14",
     "@testing-library/jest-dom": "^5.14.1",
@@ -50,7 +50,7 @@
     "@typescript-eslint/eslint-plugin": "5.10.1",
     "@typescript-eslint/parser": "5.10.1",
     "eslint": "^8.7.0",
-    "eslint-config-next": "^12.0.7",
+    "eslint-config-next": "^12.0.9",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.26.1",
